@@ -1,0 +1,387 @@
+:root {
+  --main-text-color: #f1f1f1;
+  --secondary-text-color: #cbfe1c;
+  --green-background-color: #cbfe1c;
+  --dark-background-color: #0b0e13;
+  --light-background-color: #0f1521;
+  --card-background-color: #1e2939;
+  --p-text-color: #606a79;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(203, 254, 28, 1) 5%,
+    rgba(5, 223, 114, 1) 100%
+  );
+  --border-seprator-color: #0a0e13;
+  --light-navy: #0e141e;
+  --text-gray-400: #595959;
+  --whatwedo-card: #1a1a1a;
+  --icon-bg: #1e2939;
+}
+
+.fs40px{
+
+  font-size: 40px;
+}
+.bg-green{
+  background-color: var(--green-background-color);
+}
+/* body{
+    background-color: var(--dark-background-color);
+    color: var(--main-text-color);
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Days One", sans-serif;
+  /* font-size: 48px; */
+}
+p,
+span,
+a {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+p {
+  color: var(--p-text-color);
+}
+.text-grey {
+  color: #53575e;
+}
+
+.light-navy {
+  background-color: var(--light-navy);
+}
+
+/*-------------Navbar-------------------*/
+
+.nav-bg {
+  background-color: var(--dark-background-color);
+}
+/* #main-nav .navbar-nav :focus,
+#main-nav .navbar-nav :hover{
+    --bs-nav-link-hover-color: var(--secondary-text-color);} */
+
+/*-------------Navbar-------------------*/
+/*-------------Hero---------------------*/
+#hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../asset/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   
+ span{
+    font-size: 60px;
+    font-family: "Days One", sans-serif; 
+    
+}
+
+ h1{
+       font-size: 60px;
+    font-family: "Days One", sans-serif; 
+}
+  img{
+    height: 400px;
+    width: 600px;
+         border: 3px solid #cbfe1c;
+
+}
+.hero-button {
+  border: var(--bs-btn-border-width) solid var(--green-background-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: transparent;
+        font-size: 16px;
+
+}
+}
+#hero .tag{
+    border: 2px solid var(--icon-bg);
+    position: relative;
+    /* bottom: 13%;
+    right: 40%; */
+     bottom:3rem;
+     left: -3rem;
+
+.tag-content .text{
+    font-size: 12px;
+}
+}
+#hero .hero-button:hover{
+    color: black;
+    background-color: var(--green-background-color);
+}
+/*-----------carsoul---------------*/
+
+#carouselExample .carsu-img{
+    width: 100%;
+    height:300px;
+        display:block;
+
+}
+
+.custom-arrow{
+    width: 50px !important;
+    height: 50px !important;
+
+    border: 2px solid #b6becb;
+    border-radius: 50%;
+
+    background: transparent;
+    opacity: 1;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.custom-arrow i{
+    /* font-size: 2rem; */
+    color: #8f97a7;
+}
+
+#carouselExample .btn-games{
+  border: 2px solid #cbfe1c;
+ 
+}
+  
+ .btn-games:hover{
+    color: black;
+    background-color: #cbfe1c !important;
+    
+}
+.custom-arrow:hover,
+.custom-arrow:hover i{
+    border-color: #cbfe1c;
+      color: var(--secondary-text-color);
+
+}
+
+
+
+
+
+
+
+
+/*------------Whatwedo------------------*/
+.games {
+  background-color: var(--whatwedo-card);
+}
+.square {
+  width: 100%;
+  height: 300px;
+}
+/* .games-image {
+    height: 360px;
+    object-fit: cover;
+} */
+.game-icon {
+  font-size: 0.7em;
+}
+.iconbg {
+  color: var(--icon-bg);
+}
+.fs-card {
+  font-size: 20px;
+}
+.bordercard {
+  border: 1px solid oklch(27.8% 0.033 256.848);
+}
+.square:hover {
+  border-color: #cbfe1c;
+}
+.square:hover .iconbg {
+  color: var(--secondary-text-color); /* green square */
+}
+
+.square:hover .game-icon {
+  color: var(--dark-background-color); /* black desktop icon */
+}
+.square::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-top: 30px solid var(--secondary-text-color);
+  border-right: 30px solid transparent;
+  visibility: hidden;
+  
+}
+.square::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 30px solid var(--secondary-text-color);
+  border-left: 30px solid transparent;
+    visibility: hidden;
+
+}
+.square:hover::before,
+.square:hover::after {
+    visibility: visible;
+}
+.card-body{
+    padding-inline:0;
+}
+/*-------------Gamers-------------------*/
+
+.card1 {
+  filter: grayscale(100%);
+  transition:
+    filter 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  filter: grayscale(0%) brightness(1);
+}
+
+/* .team-card img{
+    filter: grayscale(100%);
+    transition: filter .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.team-card:hover img{
+    filter: grayscale(0%)brightness(1)
+   
+
+} */
+.card1 {
+  position: relative;
+}
+.card1 .team-watermark {
+  position: absolute;
+  right: 0px;
+  bottom: 50px;
+  transform: rotate(90deg);
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+.fs-text {
+  font-size: 0.75rem;
+}
+.text-gray-400 {
+  color: var(--text-gray-400);
+}
+/* ------------form--------------------- */
+.form-check-input {
+  width: 1.3em;
+  height: 1.3em;
+}
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: var(--green-background-color);
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0.02em;
+}
+
+.form-check-input:focus {
+  border-color: var(--green-background-color);
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #cbfe1c;
+}
+.btn {
+  border: var(--bs-btn-border-width) solid var(--green-background-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--green-background-color);
+}
+.btn:hover {
+  color: var(--green-background-color);
+  background-color: var(--green-background-color);
+  border-color: var(--green-background-color);
+}
+
+.contact-status {
+  position: relative;
+}
+
+.contact-status::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  background-color: #39465b;
+}
+/*-------------- form----------------- */
+/* ------------- contact us - card ---------------*/
+.bg-cardgradient {
+  /* background: #CBFE1C; */
+  background: var(--bg-gradient);
+}
+.bg-card {
+  background-color: var(--card-background-color);
+}
+.darkbg-color {
+  color: var(--dark-background-color);
+}
+.text-color {
+  color: var(--secondary-text-color);
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #0b0e13);
+}
+
+.darkcontainer-color {
+  background-color: var(--dark-background-color);
+}
+
+/* ---------------------------------- */
+.bottom-bar {
+  position: relative;
+}
+
+.bottom-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1px;
+  right: 1px;
+  height: 1px;
+  background-color: #39465b;
+}
+::selection {
+  background-color: var(--secondary-text-color);
+  color: var(--dark-background-color);
+}
+/* shared size for both arrows */
+/* .contact .header span::before,
+.contact .header span::after{
+    content: "";
+    width: 80px;
+    height: 14px;
+} */
+
+/* LEFT arrow → points right, toward the text */
+/* .contact .header span::before{
+    background: linear-gradient(to right, transparent, var(--secondary-text-color)); */
+/* clip-path: polygon(0 40%, 75% 40%, 75% 0, 100% 50%, 75% 100%, 75% 60%, 0 60%); */
+/* } */
+
+/* RIGHT arrow ← points left, toward the text */
+/* .contact .header span::after{
+    background: linear-gradient(to left, transparent, var(--secondary-text-color)); */
+/* clip-path: polygon(100% 40%, 25% 40%, 25% 0, 0 50%, 25% 100%, 25% 60%, 100% 60%); */
+/* } */
+/* .contact header span{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--secondary-text-color);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+} */
